@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2854BFC90EE0CE2751840261F6179AFC74611A0D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2854BFC90EE0CE2751840261F6179AFC74611A0D" : 0,
+    "05D23E26B4CDA2E0225D1890602634CBAE937A41" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "299D6F87-A799-4B7F-977C-608C44CC0242",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2854BFC90EE0CE2751840261F6179AFC74611A0D" : "JKKCFunction\/",
+    "05D23E26B4CDA2E0225D1890602634CBAE937A41" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "JKKCFunction",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "JKKCFunction.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Jaykong\/20160229JK",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "05D23E26B4CDA2E0225D1890602634CBAE937A41"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/trainer\/Desktop\/repos\/JKKCFunction.git\/",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2854BFC90EE0CE2751840261F6179AFC74611A0D"
+    }
+  ]
+}
