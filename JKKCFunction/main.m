@@ -8,32 +8,38 @@
 
 #import <Foundation/Foundation.h>
 #import "Fraction.h"
-void description() {
-    printf("this is a description");
-}
-int description2(int a, int b) {
-    return a + b;
-}
+typedef void (^Block)(void);
+typedef int (^Block2)(int,int);
+typedef int (^Block3) (NSString *str1,NSString *str2);
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        //声明无参无类型块
+        Block block1;
+        Block2 block2;
+        Block3 block3;
         
-        /*
-         两种声明无参无返回类型块的方法：
-         */
-        //方法1：声明一个块：无参无返回类型
-        void (^block1)(void);
-        //方法2：声明一个块：无参无返回类型
-        void (^block2)();
-        /*
-         1.块是一个无名函数，相当于函数嵌套，块里面的内容只有像函数一样调用了以后才会执行
-         2.块的调用和函数的调用一样
-         */
+        //定义块的字面量
         block1 = ^() {
-            printf("this is main block\n");
-        };//定义块的字面量
-        Fraction *f1 = [[Fraction alloc] init];
-        [f1 print:block1];
+            printf("this is a block1\n");
+        };
+        block2 = ^(int x ,int y) {
+            return x - y;
+        };
         
+        NSArray *arr = @[@"1",@"2",@"3"];
+        [arr enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL *stop) {
+            NSLog(@"the string is %@",obj);
+            *stop = YES;
+       }];
+        
+        block3 = ^(NSString *str1,NSString* str2) {
+            return 3;
+        };
+        //执行块
+        block1();
+        int add = block2(3,4);
+        printf("add result :%i\n",add);
+#pragma mark ------------------
     }
     return 0;
 }
